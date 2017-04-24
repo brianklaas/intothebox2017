@@ -13,9 +13,9 @@
 				<h3>Into The Box 2017:</h3>
 				<h1>AWS Service Demos</h1>
 				<h3>CFML</h3>
-				<p><a href="sns.cfm">Simple Notification Service (SNS)</a></p>
 				<p><a href="lambda.cfm">Lambda Function Invocation</a></p>
 				<p><a href="dynamodb.cfm">DynamoDB</a></p>
+				<p><a href="sns.cfm">Bonus: Simple Notification Service (SNS)</a></p>
 				<h3>JavaScript</h3>
 				<p><a href="showSourceCode.cfm?fileToGrab=jsLargeFile">Lambda: Check for Large File Uploads</a>
 				<p><a href="showSourceCode.cfm?fileToGrab=jsReturnData">Lambda: Return Data to Caller</a>

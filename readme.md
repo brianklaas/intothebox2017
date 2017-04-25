@@ -36,8 +36,8 @@ For more infomration about IAM accounts, roles, and permissions, please review t
 You need to set up the following resources within AWS for these demos to work:
 
 1. SNS - create a topic to which messsages can be sent. The ARN of this topic must be added to the top of sns.cfm.
-2. Lambda - create a Lambda function using the code in lambdaJSFunctions/lambda-returnDataToCaller.js. The name of the function must be added to the top of lambda.cfm. Other Lambda functions from the presentation are not called from this application. You can, however, add them to Lambda using the source code in this repo.
-3. DynamoDB - create a DynamoDB table with a primary key (hash key) of "userID" (String) and a sort key (range key) of "epochTime" (Number). The table name must be added to the top of dynamodb.cfm.
+2. Lambda - create a Lambda function using the code in nodejs/lambda/lambda-returnDataToCaller.js. The Lambda runtime should be NodeJS 4.3, and you do not need to configure a trigger for the function, as it will be invoked from this application. The ARN (Amazon Resource Name, like a URL) of the function must be added to the top of lambda.cfm. Other Lambda functions from the presentation are not called from this application. You can, however, add them to Lambda using the source code in this repo.
+3. DynamoDB - create a DynamoDB table with a partition (primary) key of "userID" (String) and a sort key (range key) of "epochTime" (Number). The table name must be added to the top of dynamodb.cfm.
 
 Remember, the AWS docs are pretty great. Use the [Java API Reference](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/index.html) often, as it'll tell you almost everything you need to know for working with a particular AWS service.
 
